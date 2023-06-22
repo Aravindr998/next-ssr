@@ -11,7 +11,6 @@ export const getProducts = async () => {
 
 export default async function Home() {
   const { products } = await getProducts()
-  console.log('data: ', products);
   const tableHeads = ["Id", "Title", "Brand", "Rating", "Price"]
 
   return (

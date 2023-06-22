@@ -2,7 +2,6 @@ import React from 'react'
 
 export async function generateMetadata({ params: { id } }) {
     const product = await fetch(`https://dummyjson.com/products/${id}`).then(res => res.json())
-    console.log('product: ', product);
 
     return {
         title: product?.title,
